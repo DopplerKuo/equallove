@@ -1,0 +1,103 @@
+/// navigation bar
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $nav-height;
+	z-index: $nav-zindex;
+	background-color: $nav-bg-color;
+	.logo {
+		position: absolute;
+		left: 3%;
+		height: calc( #{$nav-height} - 20px );
+		top: 10px;
+		img {
+			height: 100%;
+		}
+	}
+	.nav-list {
+		position: absolute;
+		right: 3%;
+		top: 10px;
+		line-height: calc( #{$nav-height} - 20px );
+		height: calc( #{$nav-height} - 20px );
+		a {
+			height: 30px;
+			font-size: 15px;
+			margin: 0 10px;
+			color: $nav-font-color;
+		}
+	}
+	@media screen and (max-width: $breakpoint-nav-transform) {
+		height: $mobile-nav-height;
+		.logo {
+			left: 50%;
+			transform: translateX(-50%);
+			height: calc( #{$mobile-nav-height} - 20px );
+		}
+		.nav-list {
+			right: 0;
+			left: 0;
+			top: $mobile-nav-height;
+			width: 100%;
+			background-color: $mobile-nav-list-bg-color;
+			text-align: center;
+			transition: .3s ease;
+			min-height: 0;
+			height: 0;
+			overflow: hidden;
+			a {
+				width: 120px;
+				display: block;
+				margin: 10px auto;
+				line-height: 30px;
+			}
+		}
+		.nav-list.active  {
+			height: auto;
+			min-height: calc( 100vh - #{$mobile-nav-height} );
+		}
+	}
+}
+
+[class*='nav-menu'] { display: none; }
+@media screen and (max-width: $breakpoint-nav-transform) {
+	[class*='nav-menu'] {
+		display: inline-block;
+		position: relative;
+		width: $mobile-nav-height;
+		height: $mobile-nav-height;
+		left: 3%;
+		&:after, &:before {
+			position: absolute;
+			content:'';
+			width: $mobile-nav-height - 22px;
+	    height: 2px;
+			background-color: $mobile-nav-icon-color;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			transition: .3s ease;
+			transform-origin: 0% 50%;
+		}
+		&:before {
+	    top: 14px;
+      box-shadow: 0px 10px 0px 0px $mobile-nav-icon-color;
+		}
+		&:after {
+			bottom: 14px;
+		}
+	}
+	.nav-menu.active {
+		&:before {
+			transform: rotate3d(0, 0, 1, 45deg);
+	    top: 14px;
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+		}
+		&:after {
+			transform: rotate3d(0, 0, 1, -45deg);
+			bottom: 14px;
+		}
+	}
+}

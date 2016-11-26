@@ -1,0 +1,64 @@
+@charset "UTF-8";
+// ========= 客製化區 =========
+@import 'custom_style/variables'; // 變數
+@import 'custom_style/font'; // landing page layout
+// ========= base =========
+@import 'base/reset'; // doppler reset
+@import 'base/flex_layout'; // dopplex
+@import 'base/layout'; // landing page layout
+// ========= element =========
+@import 'element/btn'; // btn & calltoaction
+@import 'element/nav'; 
+@import 'element/bar';
+// ========= layout =========
+@import 'layout/1'; 
+@import 'layout/2';
+@import 'layout/3';
+@import 'layout/4';
+@import 'layout/5';
+@import 'layout/6';
+
+* {
+	font-family: $p600;
+	font-weight: 600;
+}
+
+h2 {
+	color: rgba(0,0,0,.65);
+	b { 
+		color: rgba(0,0,0,.45);
+		margin-left: 10px;
+	}
+}
+h3 {
+	color: #FF4747;
+}
+section {
+	p {
+		line-height: 1.7;
+		letter-spacing: 1px;
+		margin-top: 25px;
+		color: rgba(0,0,0,.6);
+		b {
+			margin: 0 4px;
+			color: #3b92f5;
+		}
+	}
+}
+
+footer {
+	background-color: #212121;
+	padding: 40px 5%;
+	text-align: center;
+	h5 {
+		margin-bottom: 15px;
+		opacity: .7;
+	}
+	h5, p, h4 {
+		font-size: 15px;
+		color: rgba(255,255,255,.5);
+		font-family: $p200;
+		font-weight: 200;
+	}
+	h4 { color: rgba(255,255,255,1);}
+}
