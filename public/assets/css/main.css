@@ -873,6 +873,98 @@ p .right {
   color: #3b92f5;
 }
 
+.pop-up {
+  position: fixed;
+  background: white;
+  z-index: 10;
+  left: 0;
+  max-width: 1100px;
+  width: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  height: 90%;
+  top: 30px;
+  display: none;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pop-up-top {
+  max-height: 300px;
+  height: 20%;
+  background-image: linear-gradient(to bottom, #ffdba1, #ffaeae);
+}
+
+.pop-up-top .close-circle {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+}
+
+.pop-up-top .cross {
+  cursor: pointer;
+  border-left: 3px solid #aaa;
+  -webkit-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+  height: 22px;
+  width: 6px;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  position: absolute;
+}
+
+.pop-up-top .cross.right {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 6px;
+  right: 11px;
+}
+
+.pop-up-top .cross.left {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 4px;
+  right: 11px;
+}
+
+.pop-up-box {
+  height: 80%;
+  padding-top: 60px;
+  overflow: scroll;
+  padding-bottom: 60px;
+}
+
+.pop-up-box > * {
+  min-width: 400px;
+  width: 80%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .pop-up {
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  .pop-up-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .pop-up-box > * {
+    min-width: 338px;
+    text-align: justify;
+  }
+}
+
 * {
   font-family: PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
   font-weight: 600;
