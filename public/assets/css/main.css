@@ -523,6 +523,7 @@ section .content {
   padding: 10px 2%;
   z-index: 10;
   background-color: #fff;
+  border-radius: 35px;
 }
 
 .equallove-bar h1 {
@@ -689,8 +690,28 @@ p .right {
 }
 
 .sec1 {
-  background-image: url("../img/main/page-1.svg");
-  background-size: 60%;
+  background-image: url("../img/main/page-1.jpg");
+  background-size: cover;
+}
+
+.sec1 .content {
+  text-align: center;
+}
+
+.sec1 h2 {
+  background: white;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.sec1 h3 {
+  margin-top: 15px;
+  background: white;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 3px;
 }
 
 .s1-media-logos {
@@ -763,30 +784,98 @@ p .right {
   background-image: radial-gradient(circle at 37% 63%, #ffdba1, #ffaeae);
 }
 
-.sec3 {
+.s3-knowledge {
+  margin-top: 40px;
+}
+
+.s3-knowledge .s3-block h5 {
+  margin-top: 10px;
+}
+
+.s3-knowledge .s3-block p {
+  font-size: 13px;
+}
+
+.s3-current {
+  margin-top: 20px;
+}
+
+.s3-current h3 {
+  margin-bottom: 10px;
+}
+
+.s3-current small {
+  line-height: 1.7;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+}
+
+.s3-current p {
+  font-size: 15px;
+}
+
+.s3-block-current:nth-child(1) p, .s3-block-current:nth-child(2) p {
+  margin-top: 10px;
+}
+
+.s3-block-current:nth-child(1) b, .s3-block-current:nth-child(2) b {
+  color: #FF4747;
+  font-size: 82px;
+  font-weight: 500;
+}
+
+.sec4 {
+  background-color: #f8f8f8;
+}
+
+.s4-knowledge {
+  margin-top: 40px;
+}
+
+.s4-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 4px #ff8585;
+  margin-bottom: 20px;
+}
+
+.s4-knowledge-card p {
+  font-size: 15px;
+}
+
+.s4-knowledge-card .btn {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #3b92f5;
+}
+
+.sec6 {
   background-color: #f8f8f8;
   padding: 5% 0;
 }
 
-.sec3 h2 {
+.sec6 h2 {
   margin-left: 5%;
 }
 
-.sec3 .content {
+.sec6 .content {
   max-width: 100%;
   padding: 0;
   overflow-x: auto;
 }
 
-.sec3 .content::-webkit-scrollbar {
+.sec6 .content::-webkit-scrollbar {
   height: 5px;
 }
 
-.sec3 .content::-webkit-scrollbar-track {
+.sec6 .content::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.sec3 .content::-webkit-scrollbar-thumb {
+.sec6 .content::-webkit-scrollbar-thumb {
   background-color: #FF8585;
   border-radius: 5px;
 }
@@ -846,31 +935,11 @@ p .right {
   background-color: #fff;
 }
 
-.sec4 {
-  background-color: #f8f8f8;
-}
-
-.s4-knowledge {
-  margin-top: 40px;
-}
-
-.s4-icon {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  box-shadow: 0 0 0 4px #ff8585;
-  margin-bottom: 20px;
-}
-
-.s4-knowledge-card p {
-  font-size: 15px;
-}
-
-.s4-knowledge-card .btn {
-  text-align: left;
-  margin-top: 20px;
-  font-size: 15px;
-  color: #3b92f5;
+.sec7 {
+  background-image: url("../img/main/map.svg");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .pop-up {

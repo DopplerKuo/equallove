@@ -27,8 +27,25 @@ p .right {
 	margin-left: 10px;
 }
 .sec1 {
-	background-image: url('../img/main/page-1.svg');
-	background-size: 60%;
+	background-image: url('../img/main/page-1.jpg');
+	background-size: cover;
+	.content {
+		text-align: center;
+	}
+	h2 {
+		background: white;
+	  display: inline-block;
+	  padding: 8px 30px;
+	  border-radius: 8px;
+	  color: rgba(0,0,0,0.85);
+	}
+	h3 {
+		margin-top: 15px;
+		background: white;
+	  display: inline-block;
+	  padding: 5px 10px;
+	  border-radius: 3px;
+	}
 }
 .s1-media-logos {
 	display: block;
