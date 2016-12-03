@@ -1,3 +1,6 @@
+.sec1 {
+	overflow: visible;
+}
 h4 {
 	font-family: $p600;
 	font-weight: 600;
@@ -59,4 +62,23 @@ p .right {
 .s1-tw-chart {
 	background-color: rgba(0,0,0,.5);
 	height: 300px;
+}
+
+.triangle-box {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	height: 90px;
+	width: 170px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-image: url('../img/main/Triangle.svg');
+	span { 
+		color: #fff; 
+		font-size: 16px;
+		font-family: $p300;
+		font-weight: 300;
+		transform: translateY(-10px);
+	}
 }

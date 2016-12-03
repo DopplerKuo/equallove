@@ -3,10 +3,15 @@
 	.s3-block {
 		h5 {
 			margin-top: 10px;
+			text-align: center;
 		}
 		p {
 			font-size: 13px;
+			padding-top: 3px;
 		}
+	}
+	.s3-block:nth-child(3) p {
+		margin-top: 4px;
 	}
 }
 
@@ -26,27 +31,22 @@
 	}
 }
 
-// .s3-block-current:nth-child(1) {
-//	flex-basis: 27%;
-//	width: 27%;
-//}
-
-//.s3-block-current:nth-child(2) {
-//	flex-basis: 25%;
-//	width: 25%;
-//}
-
-//.s3-block-current:nth-child(3) {
-//	width: 40%;
-//}
-
+.s3-block-current {
+	margin: 10px 40px 0 0;
+}
+.s3-block-current:nth-child(3) {
+	flex: 1 1 auto;
+	width: auto;
+	margin: 10px 0;
+}
 .s3-block-current:nth-child(1), .s3-block-current:nth-child(2) {
 	p {
 		margin-top: 10px;
 	}
 	b {
 		color: #FF4747;
-		font-size: 82px;
-		font-weight: 500;
+		font-size: 79px;
+		font-weight: 200;
+		font-family: $p200;
 	}
 }
