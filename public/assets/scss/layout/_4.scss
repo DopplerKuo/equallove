@@ -1,22 +1,57 @@
 .sec4 {
 	background-color: #f8f8f8;
 }
-.s4-knowledge {
-	margin-top: 40px;
-}
-.s4-icon {
-	width: 100px;
-	height: 100px;
-	border-radius: 100%;
-	box-shadow: 0 0 0 4px $r1;
-	margin-bottom: 20px;
-}
-.s4-knowledge-card p {
-	font-size: 15px;
-}
-.s4-knowledge-card .btn {
-	text-align: left;
-	margin-top: 20px;
-	font-size: 15px;
+.sec4 h3 {
 	color: #3b92f5;
+	margin-top: 30px;
+	margin-bottom: 	10px;
+	padding-bottom: 10px;
+	box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+}
+
+.s4-faq h4 {
+	font-size: 20px;
+	margin-top: 0;
+}
+.s4-faq {
+	position: relative;
+	background-color: #fff;
+	padding: 10px 13px 55px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 0 rgba(0,0,0,.1),
+							inset 0 0 0 2px rgba(0,0,0,.1);
+}
+.s4-faq p {
+	position: relative;
+	padding-left: 20px;
+	height: 90px;
+	overflow: hidden;
+	text-overflow : ellipsis;
+	color: rgba(0,0,0,.3);
+	&:before {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 8px;
+		left: 0;
+		top: 0;
+		border-radius: 40px;
+		background-color: #ff9a9a;
+	}
+}
+.s4-faq-more-btn {
+	position: absolute;
+	background-color: #3b92f5;
+	bottom: 15px;
+	right: 10px;
+	color: #fff;
+	width: 120px;
+	line-height: 30px;
+	border-radius: 30px;
+	margin: 10px auto 0;
+	opacity: .7;
+	transition: .3s ease;
+	&:hover {
+		opacity: 1;		
+	}
 }
