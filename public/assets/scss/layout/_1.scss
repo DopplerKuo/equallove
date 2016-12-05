@@ -83,3 +83,7 @@ p .right {
 		transform: translateY(-10px);
 	}
 }
+
+@media screen and (max-width:$breakpoint-medium) {
+	background-attachment: scroll;
+}

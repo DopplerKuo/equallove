@@ -758,6 +758,10 @@ p .right {
           transform: translateY(-10px);
 }
 
+@media screen and (max-width: 992px) {
+  background-attachment: scroll;
+}
+
 .s2-box-icon {
   text-align: center;
   border-radius: 100%;
@@ -966,6 +970,10 @@ p .right {
   box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
+.s4-faq a {
+  color: #3b92f5;
+}
+
 .s4-faq p {
   position: relative;
   padding-left: 20px;
@@ -1004,6 +1012,10 @@ p .right {
 
 .s4-faq-more-btn:hover {
   opacity: 1;
+}
+
+.content a {
+  color: #3b92f5;
 }
 
 .sec6 {
