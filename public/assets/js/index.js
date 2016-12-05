@@ -33,6 +33,29 @@ $(window).load(function() {
 			$("body").css("overflow", "auto");
 		});
 	})
+
+
+	/// 數字
+
+	window.sr = ScrollReveal();
+  sr.reveal('.sec3 .reveal',{
+  	 delay        : 200,
+     duration     : 700,
+     afterReveal  : function(domE1) {
+        $('.n1').animateNumbers( 59.3 , true, 1500 );
+				$('.n2').animateNumbers( 100 , true, 1500 );
+     }
+  });
+  sr.reveal('.sec7 .reveal',{
+  	 delay        : 200,
+     duration     : 700,
+     afterReveal  : function(domE1) {
+     		$('.n3').animateNumbers( 227 , 3000 );
+     }
+  });
+  sr.reveal('.s2-icons .reveal',500);
+  sr.reveal('.s2-compare-card-box .reveal',500);
+  sr.reveal('.s4-faq.reveal', { duration: 800 }, 100);
 });
 
 

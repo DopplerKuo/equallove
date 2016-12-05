@@ -696,6 +696,7 @@ p .right {
 .sec1 {
   background-image: url("../img/main/page-1.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .sec1 .content {

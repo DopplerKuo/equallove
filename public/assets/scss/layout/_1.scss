@@ -32,6 +32,7 @@ p .right {
 .sec1 {
 	background-image: url('../img/main/page-1.jpg');
 	background-size: cover;
+	background-attachment: fixed;
 	.content {
 		text-align: center;
 	}
