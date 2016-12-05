@@ -953,14 +953,14 @@ p .right {
 }
 
 .s4-faq h4 {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 0;
 }
 
 .s4-faq {
   position: relative;
   background-color: #fff;
-  padding: 10px 13px 55px;
+  padding: 15px 20px 55px;
   border-radius: 5px;
   box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
@@ -968,8 +968,10 @@ p .right {
 .s4-faq p {
   position: relative;
   padding-left: 20px;
-  height: 90px;
+  font-size: 15px;
+  height: 80px;
   overflow: hidden;
+  margin-top: 10px;
   text-overflow: ellipsis;
   color: rgba(0, 0, 0, 0.3);
 }
