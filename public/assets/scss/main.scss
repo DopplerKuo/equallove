@@ -64,3 +64,27 @@ footer {
 	}
 	h4 { color: rgba(255,255,255,1);}
 }
+
+.supportus {
+	margin-top: 15px;
+	img {
+		width: 100%;
+		max-width: 170px;
+		vertical-align: bottom;
+	}
+	a {
+		vertical-align: bottom;
+		display: inline-block;
+		width: 120px;
+		line-height: 35px;
+		background-color: #ff9a9a;
+		border-radius: 30px;
+		margin-left: 10px;
+		color: #fff;
+		opacity: .95;
+		transition: .3s ease;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

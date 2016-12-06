@@ -1309,3 +1309,30 @@ footer h5, footer p, footer h4 {
 footer h4 {
   color: white;
 }
+
+.supportus {
+  margin-top: 15px;
+}
+
+.supportus img {
+  width: 100%;
+  max-width: 170px;
+  vertical-align: bottom;
+}
+
+.supportus a {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 120px;
+  line-height: 35px;
+  background-color: #ff9a9a;
+  border-radius: 30px;
+  margin-left: 10px;
+  color: #fff;
+  opacity: .95;
+  transition: .3s ease;
+}
+
+.supportus a:hover {
+  opacity: 1;
+}
