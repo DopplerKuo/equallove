@@ -699,6 +699,12 @@ p .right {
   background-attachment: fixed;
 }
 
+@media screen and (max-width: 992px) {
+  .sec1 {
+    background-attachment: scroll;
+  }
+}
+
 .sec1 .content {
   text-align: center;
 }
@@ -756,10 +762,6 @@ p .right {
   -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
           transform: translateY(-10px);
-}
-
-@media screen and (max-width: 992px) {
-  background-attachment: scroll;
 }
 
 .s2-box-icon {

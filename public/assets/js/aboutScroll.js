@@ -10,4 +10,10 @@ $(function(){
 				$('.sec1 .content').css("transform", "translate3d(0," + a + "px,0)")
 　　　}
 　　}).scroll();
+	$(".go-down-btn").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#scrolltohere").offset().top
+	    }, 800);
+	});
 })
+
