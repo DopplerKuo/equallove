@@ -6,7 +6,6 @@ $(function(){
    var a = $this_Top / 4
    var o = 1 - (1 / a)
 　　if($this_Top < $barFixedHeight){
-				console.log($this_Top)
 				$('.sec1 .content').css("transform", "translate3d(0," + a + "px,0)")
 　　　}
 　　}).scroll();

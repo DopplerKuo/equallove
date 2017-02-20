@@ -14,3 +14,16 @@
 		right: 3%;
 	}
 }
+
+.content a.where_money {
+	display: block;
+	width: 150px;
+	margin: 12px auto 0;
+	line-height: 40px;
+	font-size: 13px;
+	background-color: $r3;
+	border-radius: 3px;
+	color: rgba(0,0,0,.8);
+	font-family: $p600;
+	font-weight: 600;
+}
