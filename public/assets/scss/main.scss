@@ -11,7 +11,7 @@
 @import 'element/nav'; 
 @import 'element/bar';
 // ========= layout =========
-@import 'layout/1'; 
+@import 'layout/header'; 
 @import 'layout/2';
 @import 'layout/3';
 @import 'layout/4';
@@ -20,13 +20,23 @@
 @import 'layout/7';
 @import 'layout/pop_up_box';
 
+body.nav-fixed {
+	#nav { position: fixed; }
+	header { margin-top: 40px }
+}
+
 * {
 	font-family: $p600;
 	font-weight: 600;
 }
 
 h2 {
-	color: rgba(0,0,0,.65);
+	font-family: $p300;
+	text-align: center;
+  font-size: 42px;
+  font-weight: 300;
+  color: #2f2f2f;
+
 	b { 
 		color: rgba(0,0,0,.45);
 		margin-left: 10px;
@@ -87,4 +97,9 @@ footer {
 			opacity: 1;
 		}
 	}
+}
+
+.h3_2 {
+	font-size: 18px;
+	color: #444444;
 }

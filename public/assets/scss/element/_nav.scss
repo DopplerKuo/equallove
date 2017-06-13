@@ -1,63 +1,50 @@
 /// navigation bar
 #nav {
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: $nav-height;
-	z-index: $nav-zindex;
-	background-color: $nav-bg-color;
-	.logo {
+	height: 40px;
+	z-index: 30;
+	background-color: #fff;
+
+	&:after {
+		content: '';
 		position: absolute;
-		left: 3%;
-		height: calc( #{$nav-height} - 20px );
-		top: 10px;
-		img {
-			height: 100%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(255, 68, 68, 0.61), rgba(255, 196, 35, 0.61) 19%, rgba(255, 234, 4, 0.61) 42%, rgba(119, 251, 39, 0.61) 60%, rgba(51, 157, 245, 0.61) 81%, rgba(153, 51, 255, 0.61));
+
+	}
+
+	.nav-left, .nav-right {
+		height: 100%;
+	}
+
+	.nav-right {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		@media screen and (max-width: 992px) {
+			display: none;
 		}
 	}
-	.nav-list {
-		position: absolute;
-		right: 3%;
-		top: 10px;
-		line-height: calc( #{$nav-height} - 20px );
-		height: calc( #{$nav-height} - 20px );
-		a {
-			height: 30px;
-			font-size: 15px;
-			margin: 0 10px;
-			color: $nav-font-color;
-		}
+
+	.logo img {
+		height: 35px;
 	}
-	@media screen and (max-width: $breakpoint-nav-transform) {
-		height: $mobile-nav-height;
-		.logo {
-			left: 50%;
-			transform: translateX(-50%);
-			height: calc( #{$mobile-nav-height} - 20px );
-		}
-		.nav-list {
-			right: 0;
-			left: 0;
-			top: $mobile-nav-height;
-			width: 100%;
-			background-color: $mobile-nav-list-bg-color;
-			text-align: center;
-			transition: .3s ease;
-			min-height: 0;
-			height: 0;
-			overflow: hidden;
-			a {
-				width: 120px;
-				display: block;
-				margin: 10px auto;
-				line-height: 30px;
-			}
-		}
-		.nav-list.active  {
-			height: auto;
-			min-height: calc( 100vh - #{$mobile-nav-height} );
-		}
+
+	a {
+		margin: 0 5px;
+		display: inline-block;
+		width: 90px;
+		font-size: 15px;
+		text-align: center;
+		color: #444444;
 	}
 }
 

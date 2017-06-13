@@ -1,25 +1,36 @@
 .sec4 {
-	background-color: #f8f8f8;
+
+	.content {
+		padding: 8% 2.5%;
+		max-width: 1280px;
+
+		h2 {
+			margin-bottom: 50px;
+		}
+	}
 }
 .sec4 h3 {
-	color: #3b92f5;
-	margin-top: 30px;
+	color: #444444;
+	margin-top: 28px;
+	font-size: 28px;
 	margin-bottom: 	10px;
 	padding-bottom: 10px;
 	box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
 }
 
+
 .s4-faq h4 {
 	font-size: 18px;
 	margin-top: 0;
+	height: 50px;
+	overflow: hidden;
 }
 .s4-faq {
 	position: relative;
-	background-color: #fff;
-	padding: 15px 20px 55px;
-	border-radius: 5px;
-	box-shadow: 5px 5px 0 0 rgba(0,0,0,.1),
-							inset 0 0 0 2px rgba(0,0,0,.1);
+	padding: 15px 20px 45px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: solid 1px #d7d7d7;
 	a {
 	  color: #3b92f5;
 	}
@@ -37,19 +48,19 @@
 		content: '';
 		position: absolute;
 		height: 100%;
-		width: 8px;
+		width: 6px;
 		left: 0;
 		top: 0;
 		border-radius: 40px;
-		background-color: #ff9a9a;
+		background-color: #e8e8e8;
 	}
 }
 .s4-faq-more-btn {
 	position: absolute;
-	background-color: #3b92f5;
+	color: #ff9f00;
 	bottom: 15px;
-	right: 10px;
-	color: #fff;
+	left: 0;
+	right: 0;
 	width: 120px;
 	line-height: 30px;
 	border-radius: 30px;

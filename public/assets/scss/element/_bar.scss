@@ -1,31 +1,33 @@
 // 婚銀平權法案進度條
 .equallove-bar {
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
 	max-width: 1170px;
 	margin: auto;
-	padding: 10px 2%;
+	padding: 30px 2%;
 	z-index: 10;
 	background-color: #fff;
-	border-radius: 35px;
 }
 .equallove-bar h1 {
-	width: 120px;
+	display: block;
+	flex: 0 0 100%;
+	padding-left: calc( 8.888%  - 32px );
+	text-align: left;
 	height: 24px;
 	line-height: 24px;
 	font-size: 14px;
 	color: rgba(0,0,0,.4);
-	margin: 0 10px 0 0;
 	font-family: $p600;
 	font-weight: 600;
+	margin: 0 0 20px 0;
 }
 .equallove-bar-main {
 	position: relative;
-	flex: 1 1 calc( 100% - 130px );
-	width: calc( 100% - 130px);
+	flex: 0 0 auto;
+	width: 100%;
 	margin: 0;
 	&:before, &:after {
 		content: '';
