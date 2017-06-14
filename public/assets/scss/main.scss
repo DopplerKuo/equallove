@@ -61,7 +61,7 @@ section {
 footer {
 	background-color: #212121;
 	padding: 40px 5%;
-	text-align: center;
+	text-align: left;
 	h5 {
 		margin-bottom: 15px;
 		opacity: .7;
@@ -102,4 +102,72 @@ footer {
 .h3_2 {
 	font-size: 18px;
 	color: #444444;
+}
+
+#blog {
+	#nav { 
+		position: fixed 
+	}
+	
+	.main-blog { 
+		margin-top: 50px 
+	}
+	
+	h1 { 
+		font-size: 28px; 
+		color: #444;
+		padding-left: 10px;
+		opacity: .85; 
+	}
+
+	.content {
+		max-width: 1200px;
+		padding: 5% 2.5%;
+	}
+}
+
+#blog {
+
+	.article {
+		position: relative;
+
+		.img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 120px;
+		  height: 136px;
+		  border-radius: 4px;
+		  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.15);
+		}
+		
+		.text {
+			text-align: left;
+			background-color: #fff;
+			border-radius: 4px;
+			padding: 15px;
+			padding-left: 60px;
+			margin: 0 0 0 auto;
+		  background-color: #ffffff;
+		  border: solid 1px #eeeeee;
+		  width: calc( 100% - 80px );
+		}
+
+		h2 {
+			font-size: 18px;
+			text-align: left;
+			font-family: $p400;
+			font-weight: 400;
+			margin-bottom: 5px;
+		}
+
+		p {
+			margin-top: 0;
+			opacity: .65;
+			font-size: 15px;
+			line-height: 1.5;
+		}
+	}
 }

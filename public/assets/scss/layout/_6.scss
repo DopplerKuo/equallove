@@ -7,9 +7,11 @@
 		max-width: 100%;
 		padding: 0;
 		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
 	}
 	.content::-webkit-scrollbar {
-	    height: 5px;
+	    height: 2px;
+	    width: 0;
 	}
 	 
 	.content::-webkit-scrollbar-track {
@@ -17,7 +19,7 @@
 	}
 	 
 	.content::-webkit-scrollbar-thumb {
-	  background-color: #FF8585;
+	  background-color: rgba(0,0,0,.05);
 	  border-radius: 5px;
 	}
 }
@@ -35,22 +37,25 @@
 }
 
 .celebrity-box {
-	box-shadow: 0 5px 5px -3px rgba(0,0,0,.1);
+	box-shadow: 0 3px 2px -1px rgba(0,0,0,.05);
 	margin-right: 20px;
 }
+
 .celebrity {
 	display: flex;
 	font-size: 0;
+
 	.right {
 		padding: 5%;
 		h4 { font-size: 20px; color: rgba(0,0,0,.5); }
 		p {
-			margin-top: 5px;
+			margin-top: 15px;
 			line-height: 1.5;
 			font-size: 14px; 
-			color: $r1;
-			font-family: $p300;
-			font-weight: 300;
+			color: #444;
+			opacity: .69;
+			font-family: $p400;
+			font-weight: 400;
 			letter-spacing: 0;
 		}
 	}
@@ -59,10 +64,15 @@
 	display: inline-block;
 	width: 15vw;
 	height: 15vw;
-	max-width: 270px;
-	max-height: 270px;
-	min-width: 240px;
-	min-height: 240px;
+	max-width: 190px;
+	max-height: 190px;
+	min-width: 165px;
+	min-height: 165px;
 	vertical-align: top;
 	background-color: #fff;
+
+	&.right {
+		max-width: 240px;
+		min-width: 240px;
+	}
 }

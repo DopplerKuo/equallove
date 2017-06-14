@@ -135,6 +135,7 @@
 	.tab {
 		text-align: center;
 		opacity: .6;
+		cursor: pointer;
 
 		&.active {
 			opacity: 1;
@@ -155,6 +156,7 @@
   background-color: #ffffff;
   margin: 3px;
   flex: 1 0 auto;
+  max-width: 25%;
 
 	.img {
 		width: 100%;
